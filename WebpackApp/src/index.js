@@ -1,6 +1,6 @@
 ﻿ // initialization ...
- require(['./app/views/AppView'], function(AppView) {
-     $(function(){
-         new AppView().render();
-     });
- });
+import AppView from './app/views/AppView';
+
+$(() => {
+    new AppView().render();
+});
