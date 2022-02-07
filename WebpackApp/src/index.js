@@ -1,5 +1,5 @@
 ﻿ // initialization ...
- require(['jquery', './app/views/AppView'], function($, AppView) {
+ require(['./app/views/AppView'], function(AppView) {
      $(function(){
          new AppView().render();
      });

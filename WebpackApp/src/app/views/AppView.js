@@ -1,8 +1,7 @@
 ﻿define([
-    'jquery',
     'backbone',
-    'handlebars/dist/cjs/handlebars',
-], function ($, backbone, Handlebars) {
+    'handlebars',
+], function (backbone, Handlebars) {
     return backbone.View.extend({
         el: '#app',
         template: `
