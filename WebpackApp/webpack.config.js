@@ -15,5 +15,10 @@ module.exports = {
             $: 'jquery',
             _: 'underscore',
         }),
-    ]
+    ],
+    resolveLoader: {
+        alias: {
+            'text': 'text-loader',
+        }
+    }
 }

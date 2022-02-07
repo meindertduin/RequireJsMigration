@@ -12,6 +12,7 @@
     "backbone": "^1.4.0",
     "handlebars": "^4.7.7",
     "jquery": "^3.6.0",
+    "text-loader": "0.0.1",
     "underscore": "^1.13.2"
   },
   "devDependencies": {

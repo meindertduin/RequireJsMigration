@@ -1,36 +1,16 @@
 ﻿define([
     'backbone',
     'handlebars',
-], function (backbone, Handlebars) {
+    'text!../templates/AppTemplate.html',
+], function (backbone, Handlebars, template) {
     return backbone.View.extend({
         el: '#app',
-        template: `
-            <div class="container">
-                <h1>Te doen lijst</h1>
-                
-                <div class="input-container">
-                    <input id="todo-input" type="text" placeholder="Vul een taak in">
-                    <button id="add-todo" type="submit">Voeg toe</button>
-                </div>
-                
-                <h4>Taakjes</h4>
-                {{#each .}}
-                <div class="todo-card">
-                    <span class="card-title">{{title}}</span>
-                    <button class="todo-close-button" index="{{@index}}">
-                    ✔️
-                    </button>
-                </div>
-                {{/each}}
-                
-            </div>
-        `,
         compiledTemplate: null,
 
         items: [],
         
         initialize: function () {
-            this.compiledTemplate = Handlebars.compile(this.template);   
+            this.compiledTemplate = Handlebars.compile(template);   
         },
         
         render: function () {
