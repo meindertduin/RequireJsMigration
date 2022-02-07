@@ -1,7 +1,7 @@
 ﻿define([
-    '$',
-    'Backbone',
-    'Handlebars',
+    'jquery',
+    'backbone',
+    'handlebars',
 ], function ($, backbone, Handlebars) {
     return backbone.View.extend({
         el: '#app',
