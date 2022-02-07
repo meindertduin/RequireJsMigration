@@ -1,0 +1,57 @@
+﻿body {
+    display: flex;
+    justify-content: center;
+    font-family: "Arial Rounded MT Bold";
+    background: #3450a1;
+    color: white;
+}
+
+.container {
+    width: 40vw;
+    margin-top: 40px;
+}
+
+input {
+    width: 80%;
+    padding: 10px 10px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+button {
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+} 
+
+button:hover {
+    color: yellowgreen;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.todo-card {
+    display: flex;
+    background: #041955;
+    flex-direction: row;
+    padding: 5px 10px;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: #86c4d2;
+    border-width: 0 2px 2px 0;
+}
+
+.card-title {
+    
+}
