@@ -1,7 +1,7 @@
 ﻿define([
     'jquery',
     'backbone',
-    'handlebars',
+    'handlebars/dist/cjs/handlebars',
 ], function ($, backbone, Handlebars) {
     return backbone.View.extend({
         el: '#app',
@@ -28,7 +28,7 @@
         `,
         compiledTemplate: null,
 
-        items: [ { title: 'asdasd' }],
+        items: [],
         
         initialize: function () {
             this.compiledTemplate = Handlebars.compile(this.template);   
